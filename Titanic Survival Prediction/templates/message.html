@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<style>
+    body
+    {
+        background-image: url("/static/pqd.jpg");
+        height:150%;
+        width:100%;
+    }
+    .mb 
+    {
+        background-image: url("/static/tick.jpg");
+        height:200px;
+        width: 200px;
+    }
+                
+    .cen 
+    {
+        font-family: 'Courier New';
+        font-size:40px;
+        font-weight: 100px;
+        color: white;
+    }
+    .text1 
+    {
+        font-family: 'Courier New';
+        font-weight: 100px;
+        color: white;
+    }
+    .button 
+    {
+        padding:15px 32px;
+    }
+        
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/go_to_main" method="GET">
+    <center>
+        <h2 class="cen"> RESULT </h2>
+        <img src={{val}} height="200" width="200">
+        <h1 class="cen"> {{message}} </h1>
+        <button class="button" onclick="go_to_main()">
+            Go Back
+        </button>
+    </center>
+    </form>
+</body>
+</html>

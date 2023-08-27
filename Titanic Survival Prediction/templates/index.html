@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<style>
+    body
+    {
+        background-image: url("/static/pqd.jpg");
+        height:150%;
+        width:100%;
+    }
+    .cen 
+    {
+        font-family: 'Courier New';
+        font-size:40px;
+        font-weight: 100px;
+        color: white;
+    }
+    .text1 
+    {
+        font-family: 'Courier New';
+        font-weight: 100px;
+        color: white;
+    }
+    .button 
+    {
+        padding:15px 32px;
+    }
+        
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<form action="/ab" method="POST">
+<body>
+    <center class="cen"> Titanic Dataset Prediction</center>
+    <h2 class="text1"> ID 
+    <input type="text" name="id">
+    </h2>
+    <h2 class="text1"> Name 
+        <input type="text" name="name">
+    </h2>
+    <h2 class="text1"> Class  
+        <input type="text" name="pclass">
+    </h2>
+    <h2 class="text1"> Sex 
+        <input type="radio" name="sex" value="Male"> Male
+        <input type="radio" name="sex" value="Female"> Female
+    </h2>
+    <h2 class="text1"> Age  
+        <input type="text" name="age">
+    </h2>
+    <h2 class="text1"> SibSp
+        <input type="text" name="sibsp">
+    </h2>
+    <h2 class="text1"> Parch
+       <input type="text" name="parch">
+    </h2>
+    <h2 class="text1"> Embarked 
+        <input type="radio" name="emb" value="S"> S
+        <input type="radio" name="emb" value="C"> C
+        <input type="radio" name="emb" value="Q"> Q
+    </h2>
+    <center>
+        <button class="button" onclick="ab()"> SUBMIT 
+        </button>
+        <br>
+        <br>
+        <h2> Done By Karthikeyan</h2>
+    </center>
+</body>
+</form>
+</html>
